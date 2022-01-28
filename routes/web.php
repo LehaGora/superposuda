@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\SuperposudaController::class, 'create'])->name('create');
+Route::post('/', [\App\Http\Controllers\SuperposudaController::class, 'store'])->name('store');
