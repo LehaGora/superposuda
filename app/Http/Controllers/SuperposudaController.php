@@ -36,7 +36,7 @@ class SuperposudaController extends Controller
             'orderMethod' => 'test',
             'status' => 'trouble',
             'items' => [
-                '0' => [
+                [
                     'offer' => [
                         'id' => $offerId,
                     ],
